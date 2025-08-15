@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +17,6 @@
             --light-blue: #003366;
             --hover-blue: #004080;
         }
-
         body {
             font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: var(--deep-blue);
@@ -26,15 +24,12 @@
             padding-top: 56px;
             /* Espaço para navbar fixa */
         }
-
         .bg-deep-blue {
             background-color: var(--deep-blue) !important;
         }
-
         .text-deep-blue {
             color: var(--deep-blue) !important;
         }
-
         .btn-cta {
             background-color: var(--light-blue);
             color: var(--white);
@@ -42,12 +37,10 @@
             padding: 10px 25px;
             transition: all 0.3s;
         }
-
         .btn-cta:hover {
             background-color: var(--hover-blue);
             transform: translateY(-2px);
         }
-
         .hero {
             background: linear-gradient(rgba(0, 26, 51, 0.8), rgba(0, 26, 51, 0.8)), url('assets/img/img1.webp');
             background-size: cover;
@@ -56,48 +49,39 @@
             display: flex;
             align-items: center;
         }
-
         .service-card {
             transition: all 0.3s;
             border: none;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             height: 100%;
         }
-
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
         }
-
         .service-img {
             height: 200px;
             object-fit: cover;
         }
-
         .whatsapp-btn {
             background-color: #25D366;
             padding: 12px 30px;
             font-size: 1.1rem;
         }
-
         .whatsapp-btn:hover {
             background-color: #128C7E;
         }
-
         footer {
             background-color: var(--deep-blue);
             color: var(--white);
         }
-
         .logo-img {
             height: 100px;
         }
-
         .section-title {
             position: relative;
             margin-bottom: 3rem;
         }
-
         .section-title:after {
             content: '';
             display: block;
@@ -106,30 +90,25 @@
             background: var(--light-blue);
             margin: 15px auto 0;
         }
-
         .about-img {
             border-radius: 8px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-
         @media (max-width: 768px) {
             .hero {
                 min-height: 60vh;
                 text-align: center;
             }
-
             .logo-img {
                 height: 40px;
             }
         }
-
         /* Aumenta o tamanho dos links da navbar */
         .navbar-nav .nav-link {
             font-size: 1.2rem;
             padding-top: 0.8rem;
             padding-bottom: 0.8rem;
         }
-
         .navbar-nav .nav-link:hover {
             background-color: #1976d2;
             /* azul */
@@ -137,23 +116,19 @@
         }
     </style>
 </head>
-
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-ctu fixed-top">
         <div class="container">
             <a class="navbar-brand logo-container" href="#home">
                 <img src="assets/img/logo.png" alt="CTU Funerária" class="logo-img">
                 <span class="logo-text">CTU FUNERÁRIA</span>
             </a>
-
             <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="toggler-icon top-bar"></span>
                 <span class="toggler-icon middle-bar"></span>
                 <span class="toggler-icon bottom-bar"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -201,11 +176,9 @@
                 </ul>
             </div>
         </div>
-
         <!-- Barra de progresso no scroll -->
         <div class="scroll-progress"></div>
     </nav>
-
     <!-- CSS Personalizado para a Navbar -->
     <style>
         /* Estilos base */
@@ -218,28 +191,23 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-
         .navbar-ctu.scrolled {
             padding: 10px 0;
             background: rgba(0, 26, 51, 0.98);
         }
-
         /* Container do logo */
         .logo-container {
             display: flex;
             align-items: center;
             transition: all 0.3s ease;
         }
-
         .logo-container:hover {
             transform: translateX(5px);
         }
-
         .logo-img {
             height: 90px;
             transition: all 0.3s ease;
         }
-
         .logo-text {
             color: white;
             font-weight: 700;
@@ -249,12 +217,10 @@
             transform: translateX(-10px);
             transition: all 0.3s ease;
         }
-
         .logo-container:hover .logo-text {
             opacity: 1;
             transform: translateX(0);
         }
-
         /* Botão mobile personalizado */
         .custom-toggler {
             border: none;
@@ -266,7 +232,6 @@
             outline: none !important;
             box-shadow: none !important;
         }
-
         .toggler-icon {
             display: block;
             position: absolute;
@@ -279,35 +244,28 @@
             transform: rotate(0deg);
             transition: all 0.25s ease;
         }
-
         .top-bar {
             top: 0;
         }
-
         .middle-bar {
             top: 50%;
             transform: translateY(-50%);
         }
-
         .bottom-bar {
             bottom: 0;
         }
-
         /* Animação quando o menu está aberto */
         .custom-toggler[aria-expanded="true"] .top-bar {
             top: 50%;
             transform: translateY(-50%) rotate(45deg);
         }
-
         .custom-toggler[aria-expanded="true"] .middle-bar {
             opacity: 0;
         }
-
         .custom-toggler[aria-expanded="true"] .bottom-bar {
             bottom: 50%;
             transform: translateY(50%) rotate(-45deg);
         }
-
         /* Itens de menu */
         .nav-item-link {
             position: relative;
@@ -316,24 +274,20 @@
             color: white !important;
             overflow: hidden;
         }
-
         .nav-link-content {
             position: relative;
             z-index: 2;
             display: flex;
             align-items: center;
         }
-
         .nav-icon {
             margin-right: 8px;
             font-size: 0.9rem;
             transition: all 0.3s ease;
         }
-
         .nav-text {
             transition: all 0.3s ease;
         }
-
         .nav-link-underline {
             position: absolute;
             bottom: 0;
@@ -345,21 +299,17 @@
             transform-origin: right;
             transition: transform 0.4s ease;
         }
-
         .nav-item-link:hover .nav-link-underline {
             transform: scaleX(1);
             transform-origin: left;
         }
-
         .nav-item-link:hover .nav-icon {
             transform: rotate(15deg);
         }
-
         /* Efeito ativo */
         .nav-item-link.active .nav-link-underline {
             transform: scaleX(1);
         }
-
         /* Botão WhatsApp */
         .whatsapp-btn {
             background: #25D366;
@@ -371,17 +321,14 @@
             align-items: center;
             justify-content: center;
         }
-
         .whatsapp-btn i {
             margin-right: 8px;
         }
-
         .whatsapp-btn:hover {
             background: #128C7E;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
         }
-
         /* Barra de progresso */
         .scroll-progress {
             position: absolute;
@@ -393,7 +340,6 @@
             z-index: 1000;
             transition: width 0.1s ease;
         }
-
         /* Menu mobile */
         @media (max-width: 992px) {
             .navbar-collapse {
@@ -405,33 +351,27 @@
                 border-radius: 10px;
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             }
-
             .nav-item {
                 margin-bottom: 10px;
             }
-
             .whatsapp-cta {
                 margin-top: 15px;
             }
-
             .whatsapp-btn {
                 margin-left: 0;
                 justify-content: flex-start;
             }
-
             .logo-text {
                 display: none;
             }
         }
     </style>
-
     <!-- Scripts para funcionalidades -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const navbar = document.querySelector('.navbar-ctu');
             const navLinks = document.querySelectorAll('.nav-item-link');
             const scrollProgress = document.querySelector('.scroll-progress');
-
             // Efeito de scroll na navbar
             window.addEventListener('scroll', function () {
                 if (window.scrollY > 50) {
@@ -439,19 +379,15 @@
                 } else {
                     navbar.classList.remove('scrolled');
                 }
-
                 // Barra de progresso
                 const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
                 const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
                 const scrolled = (winScroll / height) * 100;
                 scrollProgress.style.width = scrolled + '%';
-
                 // Ativar link ativo
                 let fromTop = window.scrollY + 100;
-
                 navLinks.forEach(link => {
                     let section = document.querySelector(link.hash);
-
                     if (
                         section.offsetTop <= fromTop &&
                         section.offsetTop + section.offsetHeight > fromTop
@@ -462,11 +398,9 @@
                     }
                 });
             });
-
             // Fechar menu mobile ao clicar em um link
             const navbarCollapse = document.querySelector('.navbar-collapse');
             const navItems = document.querySelectorAll('.nav-item-link');
-
             navItems.forEach(item => {
                 item.addEventListener('click', () => {
                     if (window.innerWidth <= 992) {
@@ -477,16 +411,13 @@
                     }
                 });
             });
-
             // Efeito hover no logo para desktop
             const logoContainer = document.querySelector('.logo-container');
-
             if (window.innerWidth > 992) {
                 logoContainer.addEventListener('mouseenter', () => {
                     document.querySelector('.logo-text').style.opacity = '1';
                     document.querySelector('.logo-text').style.transform = 'translateX(0)';
                 });
-
                 logoContainer.addEventListener('mouseleave', () => {
                     document.querySelector('.logo-text').style.opacity = '0';
                     document.querySelector('.logo-text').style.transform = 'translateX(-10px)';
@@ -494,19 +425,16 @@
             }
         });
     </script>
-
     <!-- Hero Section Modernizado -->
     <section id="home" class="hero-section">
         <!-- Partículas de fundo -->
         <div id="particles-js"></div>
-
         <!-- Imagem de fundo: campo de flores azuis -->
         <div class="hero-bg-img"
             style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;overflow:hidden;">
             <img src="assets/img/campo.jpg" alt="Campo de flores azuis"
                 style="width:100%;height:100%;object-fit:cover;object-position:center;">
         </div>
-
         <!-- Conteúdo do Hero -->
         <div class="hero-content">
             <div class="container">
@@ -517,24 +445,20 @@
                             <span class="typed-text"></span>
                             <span class="cursor">&nbsp;</span>
                         </h1>
-
                         <!-- Subtítulo com fade-in -->
                         <p class="hero-subtitle mb-5 animate__animated animate__fadeIn animate__delay-1s">
                             Serviços funerários com excelência, respeito e dignidade
                         </p>
-
                         <!-- Botão CTA com efeito -->
                         <div class="hero-cta animate__animated animate__fadeInUp animate__delay-1-5s">
                             <a href="#contact" class="btn btn-cta btn-lg pulse-animation">
                                 <i class="fas fa-phone-alt me-2"></i> Fale Conosco 24h
                             </a>
-
                             <!-- Botão secundário -->
                             <a href="#services" class="btn btn-outline-light btn-lg ms-3">
                                 <i class="fas fa-info-circle me-2"></i> Nossos Serviços
                             </a>
                         </div>
-
                         <!-- Scroll down indicator -->
                         <div class="scroll-down animate__animated animate__fadeIn animate__delay-2s">
                             <a href="#about" class="scroll-link">
@@ -545,11 +469,9 @@
                 </div>
             </div>
         </div>
-
         <!-- Overlay para escurecer o fundo -->
         <div class="hero-overlay"></div>
     </section>
-
     <!-- CSS Adicional para o Hero -->
     <style>
         .hero-section {
@@ -561,7 +483,6 @@
             align-items: center;
             color: white;
         }
-
         #particles-js {
             position: absolute;
             width: 100%;
@@ -570,7 +491,6 @@
             left: 0;
             z-index: 1;
         }
-
         .hero-video-bg {
             position: absolute;
             top: 0;
@@ -579,13 +499,11 @@
             height: 100%;
             z-index: 0;
         }
-
         .hero-video-bg video {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-
         .hero-overlay {
             position: absolute;
             top: 0;
@@ -595,13 +513,11 @@
             background: rgba(0, 26, 51, 0.7);
             z-index: 1;
         }
-
         .hero-content {
             position: relative;
             z-index: 2;
             width: 100%;
         }
-
         .hero-title {
             font-size: 4rem;
             font-weight: 700;
@@ -609,14 +525,12 @@
             margin-bottom: 1.5rem;
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
-
         .hero-subtitle {
             font-size: 1.5rem;
             max-width: 700px;
             margin: 0 auto 2rem;
             opacity: 0.9;
         }
-
         .btn-cta {
             background-color: #0066cc;
             border: none;
@@ -625,18 +539,15 @@
             border-radius: 50px;
             transition: all 0.3s ease;
         }
-
         .btn-cta:hover {
             background-color: #0052a3;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
-
         .pulse-animation {
             position: relative;
             z-index: 1;
         }
-
         .pulse-animation::after {
             content: '';
             position: absolute;
@@ -652,38 +563,32 @@
             z-index: -1;
             pointer-events: none;
         }
-
         @keyframes pulse-melhorado {
             0% {
                 transform: translate(-50%, -50%) scale(1);
                 opacity: 0.7;
                 box-shadow: 0 0 0 0 rgba(0, 102, 204, 0.7);
             }
-
             50% {
                 opacity: 0.4;
                 box-shadow: 0 0 0 20px rgba(0, 102, 204, 0.2);
             }
-
             80% {
                 opacity: 0.2;
                 box-shadow: 0 0 0 35px rgba(0, 102, 204, 0.1);
             }
-
             100% {
                 transform: translate(-50%, -50%) scale(1.2);
                 opacity: 0;
                 box-shadow: 0 0 0 50px rgba(0, 102, 204, 0);
             }
         }
-
         .scroll-down {
             position: absolute;
             bottom: -90px;
             left: 50%;
             transform: translateX(-50%);
         }
-
         .scroll-wheel {
             display: block;
             width: 30px;
@@ -692,7 +597,6 @@
             border-radius: 50%;
             position: relative;
         }
-
         .scroll-wheel::after {
             content: '';
             position: absolute;
@@ -705,71 +609,58 @@
             border-radius: 50%;
             animation: scrollDown 1.5s infinite;
         }
-
         @keyframes scrollDown {
             0% {
                 opacity: 1;
                 transform: translateY(0);
             }
-
             100% {
                 opacity: 0;
                 transform: translateY(8px);
             }
         }
-
         /* Efeito de máquina de escrever */
         .typed-text {
             color: #fff;
         }
-
         .cursor {
             display: inline-block;
             width: 3px;
             background-color: white;
             animation: blink 1s infinite;
         }
-
         @keyframes blink {
-
             0%,
             100% {
                 background-color: white;
             }
-
             50% {
                 background-color: transparent;
             }
         }
-
         /* Responsivo */
         @media (max-width: 768px) {
             .hero-title {
                 font-size: 2.5rem;
             }
-
             .hero-subtitle {
                 font-size: 1.2rem;
             }
-
             .hero-cta {
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
             }
-
             .hero-cta a {
                 margin: 0 !important;
                 width: 100%;
             }
         }
     </style>
-
     <!-- Scripts necessários -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
     <script>
         // Efeito de máquina de escrever
         document.addEventListener('DOMContentLoaded', function () {
@@ -781,7 +672,6 @@
                 showCursor: true,
                 cursorChar: '|'
             });
-
             // Inicializar partículas
             particlesJS('particles-js', {
                 particles: {
@@ -871,7 +761,6 @@
                 },
                 retina_detect: true
             });
-
             // Smooth scroll para o link de scroll down
             document.querySelector('.scroll-link').addEventListener('click', function (e) {
                 e.preventDefault();
@@ -883,7 +772,6 @@
             });
         });
     </script>
-
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
@@ -904,7 +792,6 @@
                 </div>
             </div>
     </section>
-
     <!-- Services Section -->
     <section id="services" class="py-5"
         style="background-color: var(--deep-blue); position: relative; overflow: hidden;">
@@ -914,7 +801,6 @@
             <div class="service-bg-element" style="--size: 150px; --left: 80%; --top: 40%; --delay: 0.5s;"></div>
             <div class="service-bg-element" style="--size: 80px; --left: 30%; --top: 70%; --delay: 1s;"></div>
         </div>
-
         <div class="container position-relative" style="z-index: 1;">
             <h2 class="text-center section-title mb-5 text-white">CONHEÇA NOSSOS SERVIÇOS</h2>
             <div class="row g-4 justify-content-center">
@@ -956,7 +842,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Service 2 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="card service-card h-100 border-0 shadow-lg transform-on-hover">
@@ -1007,7 +892,6 @@
             <div class="wg-diamond" style="--size: 150px; --left: 80%; --top: 10%; --delay: 0.6s;"></div>
             <div class="wg-diamond" style="--size: 100px; --left: 10%; --top: 70%; --delay: 0.9s;"></div>
         </div>
-
         <div class="container position-relative" style="z-index: 1;">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
@@ -1018,7 +902,6 @@
                         <p class="lead text-light-blue mt-4" style="font-size: 1.3rem;">Todas as vantagens que você
                             merece em um momento que precisa de cuidado e atenção</p>
                     </div>
-
                     <div class="wg-card card border-0 shadow-lg overflow-hidden">
                         <div class="row g-0">
                             <div class="col-lg-5">
@@ -1039,7 +922,6 @@
                                     </div>
                                     <h3 class="card-title text-center text-white mb-4">SERVIÇO COMPLETO PARA CONVENIADOS
                                         WG</h3>
-
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="feature-box">
@@ -1106,7 +988,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="text-center mt-5 pt-3">
                                         <a href="#contact" class="btn btn-wg-special btn-lg px-5 py-3">
                                             <span class="fw-bold">QUERO SER CONVENIADO</span>
@@ -1117,7 +998,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="wg-benefits mt-5">
                         <div class="row g-4">
                             <div class="col-md-4">
@@ -1153,7 +1033,6 @@
             </div>
         </div>
     </section>
-
     <style>
         /* WG Special Section Styles */
         .wg-card {
@@ -1163,19 +1042,16 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.5s ease;
         }
-
         .wg-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
         }
-
         .wg-header .divider {
             width: 100px;
             height: 4px;
             background: var(--light-blue);
             border-radius: 2px;
         }
-
         .service-icon-lg {
             width: 80px;
             height: 80px;
@@ -1191,7 +1067,6 @@
             position: relative;
             z-index: 2;
         }
-
         .feature-box {
             display: flex;
             align-items: center;
@@ -1200,12 +1075,10 @@
             border-radius: 8px;
             transition: all 0.3s ease;
         }
-
         .feature-box:hover {
             background: rgba(0, 51, 102, 0.2);
             transform: translateX(5px);
         }
-
         .feature-icon {
             width: 30px;
             height: 30px;
@@ -1218,13 +1091,11 @@
             color: white;
             flex-shrink: 0;
         }
-
         .feature-box p {
             margin: 0;
             color: var(--white);
             font-size: 1.05rem;
         }
-
         .btn-wg-special {
             background: linear-gradient(135deg, var(--light-blue) 0%, var(--hover-blue) 100%);
             color: white;
@@ -1237,13 +1108,11 @@
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(0, 51, 102, 0.4);
         }
-
         .btn-wg-special:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(0, 51, 102, 0.6);
             color: white;
         }
-
         .btn-wg-special::before {
             content: '';
             position: absolute;
@@ -1254,11 +1123,9 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
             transition: 0.5s;
         }
-
         .btn-wg-special:hover::before {
             left: 100%;
         }
-
         .wg-badge {
             position: absolute;
             top: 20px;
@@ -1274,7 +1141,6 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             z-index: 2;
         }
-
         .benefit-card {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 15px;
@@ -1284,13 +1150,11 @@
             transition: all 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
         .benefit-card:hover {
             transform: translateY(-10px);
             background: rgba(255, 255, 255, 0.08);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
         }
-
         .benefit-icon {
             width: 60px;
             height: 60px;
@@ -1303,18 +1167,15 @@
             font-size: 1.5rem;
             color: white;
         }
-
         .benefit-card h4 {
             color: var(--white);
             margin-bottom: 15px;
             font-weight: 600;
         }
-
         .benefit-card p {
             color: rgba(255, 255, 255, 0.7);
             font-size: 0.95rem;
         }
-
         .wg-circle,
         .wg-diamond {
             position: absolute;
@@ -1326,59 +1187,47 @@
             animation: float 8s ease-in-out infinite;
             animation-delay: var(--delay);
         }
-
         .wg-diamond {
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         }
-
         @keyframes float {
-
             0%,
             100% {
                 transform: translateY(0) rotate(0deg);
             }
-
             50% {
                 transform: translateY(-20px) rotate(5deg);
             }
         }
-
         /* Animation */
         .wg-card {
             opacity: 0;
             transform: translateY(30px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-
         .wg-card.animate {
             opacity: 1;
             transform: translateY(0);
         }
-
         .benefit-card {
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.6s ease, transform 0.6s ease;
         }
-
         .benefit-card.animate {
             opacity: 1;
             transform: translateY(0);
         }
-
         .benefit-card:nth-child(1) {
             transition-delay: 0.2s;
         }
-
         .benefit-card:nth-child(2) {
             transition-delay: 0.4s;
         }
-
         .benefit-card:nth-child(3) {
             transition-delay: 0.6s;
         }
     </style>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Animate WG card when in view
@@ -1387,37 +1236,29 @@
                     if (entry.isIntersecting) {
                         const wgCard = document.querySelector('.wg-card');
                         const benefitCards = document.querySelectorAll('.benefit-card');
-
                         wgCard.classList.add('animate');
-
                         benefitCards.forEach((card, index) => {
                             setTimeout(() => {
                                 card.classList.add('animate');
                             }, index * 200);
                         });
-
                         wgObserver.unobserve(entry.target);
                     }
                 });
             }, { threshold: 0.1 });
-
             const wgSection = document.getElementById('wg-service');
             wgObserver.observe(wgSection);
-
             // Add ripple effect to WG button
             const wgButton = document.querySelector('.btn-wg-special');
             if (wgButton) {
                 wgButton.addEventListener('click', function (e) {
                     let x = e.clientX - e.target.getBoundingClientRect().left;
                     let y = e.clientY - e.target.getBoundingClientRect().top;
-
                     let ripple = document.createElement('span');
                     ripple.style.left = x + 'px';
                     ripple.style.top = y + 'px';
                     ripple.classList.add('ripple-effect');
-
                     this.appendChild(ripple);
-
                     setTimeout(() => {
                         ripple.remove();
                     }, 1000);
@@ -1425,7 +1266,6 @@
             }
         });
     </script>
-
     <style>
         /* Custom CSS for Services Section */
         :root {
@@ -1434,7 +1274,6 @@
             --light-blue: #003366;
             --hover-blue: #004080;
         }
-
         .section-title {
             font-size: 2.5rem;
             font-weight: 700;
@@ -1444,7 +1283,6 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-
         .section-title::after {
             content: '';
             position: absolute;
@@ -1456,7 +1294,6 @@
             background: var(--light-blue);
             border-radius: 2px;
         }
-
         .service-card {
             border-radius: 15px !important;
             overflow: hidden;
@@ -1466,27 +1303,22 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             color: var(--white);
         }
-
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3) !important;
         }
-
         .service-img {
             height: 220px;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
-
         .transform-on-hover:hover .service-img {
             transform: scale(1.05);
         }
-
         .image-container {
             position: relative;
             overflow: hidden;
         }
-
         .image-overlay {
             position: absolute;
             top: 0;
@@ -1496,7 +1328,6 @@
             background: linear-gradient(to bottom, rgba(0, 26, 51, 0.1), rgba(0, 26, 51, 0.7));
             z-index: 1;
         }
-
         .service-icon {
             width: 60px;
             height: 60px;
@@ -1512,7 +1343,6 @@
             z-index: 2;
             position: relative;
         }
-
         .btn-cta {
             background-color: var(--light-blue);
             color: white;
@@ -1524,14 +1354,12 @@
             position: relative;
             overflow: hidden;
         }
-
         .btn-cta:hover {
             background-color: var(--hover-blue);
             color: white;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 51, 102, 0.3);
         }
-
         .btn-cta::before {
             content: '';
             position: absolute;
@@ -1542,22 +1370,18 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: 0.5s;
         }
-
         .btn-cta:hover::before {
             left: 100%;
         }
-
         .service-features ul {
             list-style: none;
             padding-left: 0;
         }
-
         .service-features li {
             padding: 8px 0;
             position: relative;
             padding-left: 30px;
         }
-
         .service-features li::before {
             content: '';
             position: absolute;
@@ -1567,11 +1391,9 @@
             width: 20px;
             height: 20px;
         }
-
         .text-light-blue {
             color: var(--light-blue);
         }
-
         .service-bg-element {
             position: absolute;
             width: var(--size);
@@ -1583,49 +1405,39 @@
             animation: float 6s ease-in-out infinite;
             animation-delay: var(--delay);
         }
-
         @keyframes float {
-
             0%,
             100% {
                 transform: translateY(0) translateX(0);
             }
-
             50% {
                 transform: translateY(-20px) translateX(10px);
             }
         }
-
         /* Animation classes */
         .fade-in {
             animation: fadeIn 1s ease-in;
         }
-
         @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
         .delay-1 {
             animation-delay: 0.2s;
         }
-
         .delay-2 {
             animation-delay: 0.4s;
         }
-
         .delay-3 {
             animation-delay: 0.6s;
         }
     </style>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Add animation classes when the section comes into view
@@ -1641,10 +1453,8 @@
                     }
                 });
             }, { threshold: 0.1 });
-
             const servicesSection = document.getElementById('services');
             observer.observe(servicesSection);
-
             // Add hover effect to buttons
             const buttons = document.querySelectorAll('.btn-cta');
             buttons.forEach(button => {
@@ -1657,7 +1467,6 @@
             });
         });
     </script>
-
     <!-- Location Section -->
     <section id="location" class="py-5 bg-white">
         <div class="container">
@@ -1666,7 +1475,6 @@
                 <div class="divider mx-auto bg-light-blue"></div>
                 <p class="lead text-muted mt-4">Conheça nossas unidades e facilidades</p>
             </div>
-
             <div class="row g-4">
                 <!-- CTU Itaquá -->
                 <div class="col-lg-6">
@@ -1697,7 +1505,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- CTU Mogi -->
                 <div class="col-lg-6">
                     <div class="location-card card border-0 shadow-lg h-100 overflow-hidden">
@@ -1729,7 +1536,6 @@
             </div>
         </div>
     </section>
-
     <style>
         /* Location Section Styles */
         .location-card {
@@ -1737,23 +1543,19 @@
             transition: all 0.5s ease;
             overflow: hidden;
         }
-
         .location-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
         }
-
         .location-media {
             position: relative;
             height: 300px;
             overflow: hidden;
         }
-
         .map-container {
             height: 100%;
             transition: all 0.5s ease;
         }
-
         .location-map {
             width: 100%;
             height: 100%;
@@ -1761,7 +1563,6 @@
             filter: grayscale(20%);
             transition: all 0.5s ease;
         }
-
         .location-img {
             position: absolute;
             top: 0;
@@ -1773,21 +1574,17 @@
             transition: all 0.5s ease;
             z-index: 2;
         }
-
         .location-media:hover .location-map {
             filter: grayscale(50%) brightness(0.7);
             transform: scale(1.05);
         }
-
         .location-media:hover .location-img {
             opacity: 1;
         }
-
         .location-info p {
             margin-bottom: 10px;
             color: var(--deep-blue);
         }
-
         .btn-location {
             background-color: var(--light-blue);
             color: white;
@@ -1799,14 +1596,12 @@
             position: relative;
             overflow: hidden;
         }
-
         .btn-location:hover {
             background-color: var(--hover-blue);
             color: white;
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 51, 102, 0.3);
         }
-
         .btn-location::before {
             content: '';
             position: absolute;
@@ -1817,31 +1612,25 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: 0.5s;
         }
-
         .btn-location:hover::before {
             left: 100%;
         }
-
         /* Animation */
         .location-card {
             opacity: 0;
             transform: translateY(30px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-
         .location-card:nth-child(1) {
             transition-delay: 0.2s;
         }
-
         .location-card:nth-child(2) {
             transition-delay: 0.4s;
         }
-
         .location-card.animate {
             opacity: 1;
             transform: translateY(0);
         }
-
         .section-title {
             font-size: 2.5rem;
             font-weight: 700;
@@ -1850,14 +1639,12 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-
         .divider {
             width: 80px;
             height: 4px;
             border-radius: 2px;
         }
     </style>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Animate location cards when in view
@@ -1865,21 +1652,17 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         const locationCards = document.querySelectorAll('.location-card');
-
                         locationCards.forEach((card, index) => {
                             setTimeout(() => {
                                 card.classList.add('animate');
                             }, index * 200);
                         });
-
                         locationObserver.unobserve(entry.target);
                     }
                 });
             }, { threshold: 0.1 });
-
             const locationSection = document.getElementById('location');
             locationObserver.observe(locationSection);
-
             // Add hover effect to buttons
             const buttons = document.querySelectorAll('.btn-location');
             buttons.forEach(button => {
@@ -1892,7 +1675,6 @@
             });
         });
     </script>
-
     <!-- Contact Section -->
     <section id="contact" class="py-5 position-relative"
         style="background: linear-gradient(to bottom, var(--deep-blue) 0%, #000a1a 100%); overflow: hidden;">
@@ -1903,7 +1685,6 @@
             <div class="contact-bg-diamond" style="--size: 60px; --left: 25%; --top: 70%; --delay: 0.6s;"></div>
             <div class="contact-bg-diamond" style="--size: 100px; --left: 75%; --top: 60%; --delay: 0.9s;"></div>
         </div>
-
         <div class="container position-relative" style="z-index: 1;">
             <div class="text-center mb-5">
                 <h2 class="section-title text-white mb-3 animate-pop-in">Está precisando de mais informações?</h2>
@@ -1911,7 +1692,6 @@
                 <p class="lead mt-4 animate-pop-in" style="animation-delay: 0.4s; font-size: 1.3rem; color: #fff;">
                     Estamos aqui para lhe ajudar. Entre em contato com nossos atendentes via WhatsApp</p>
             </div>
-
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 col-md-10">
                     <div class="card contact-card border-0 shadow-lg animate-slide-up" style="animation-delay: 0.6s;">
@@ -1967,7 +1747,6 @@
             </div>
         </div>
     </section>
-
     <style>
         /* Contact Section Styles */
         .contact-card {
@@ -1977,12 +1756,10 @@
             position: relative;
             overflow: hidden;
         }
-
         .contact-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3) !important;
         }
-
         .contact-icon {
             width: 80px;
             height: 80px;
@@ -1996,7 +1773,6 @@
             color: white;
             box-shadow: 0 10px 30px rgba(0, 51, 102, 0.4);
         }
-
         .contact-info {
             padding: 20px;
             border-radius: 10px;
@@ -2004,13 +1780,11 @@
             height: 100%;
             transition: all 0.3s ease;
         }
-
         .contact-info:hover {
             background: rgba(255, 255, 255, 0.95);
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-
         .contact-location {
             display: flex;
             align-items: center;
@@ -2018,7 +1792,6 @@
             padding-bottom: 10px;
             border-bottom: 2px solid rgba(0, 51, 102, 0.1);
         }
-
         .location-icon {
             width: 40px;
             height: 40px;
@@ -2030,19 +1803,16 @@
             margin-right: 15px;
             color: white;
         }
-
         .contact-location h5 {
             color: var(--deep-blue);
             margin: 0;
             font-weight: 600;
         }
-
         .contact-details p {
             color: var(--deep-blue);
             margin-bottom: 10px;
             font-size: 1.05rem;
         }
-
         .whatsapp-btn {
             background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
             color: white;
@@ -2056,13 +1826,11 @@
             box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
             padding-right: 40px;
         }
-
         .whatsapp-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(37, 211, 102, 0.6);
             color: white;
         }
-
         .whatsapp-btn::before {
             content: '';
             position: absolute;
@@ -2073,11 +1841,9 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
             transition: 0.5s;
         }
-
         .whatsapp-btn:hover::before {
             left: 100%;
         }
-
         .pulse-effect {
             position: absolute;
             top: 50%;
@@ -2089,31 +1855,26 @@
             border-radius: 50%;
             animation: pulse 1.5s infinite;
         }
-
         @keyframes pulse {
             0% {
                 transform: translateY(-50%) scale(0.8);
                 opacity: 0.7;
             }
-
             70% {
                 transform: translateY(-50%) scale(1.3);
                 opacity: 0;
             }
-
             100% {
                 transform: translateY(-50%) scale(0.8);
                 opacity: 0;
             }
         }
-
         .divider {
             width: 100px;
             height: 4px;
             background: var(--light-blue);
             border-radius: 2px;
         }
-
         /* Background elements */
         .contact-bg-circle,
         .contact-bg-diamond {
@@ -2126,66 +1887,54 @@
             animation: float 8s ease-in-out infinite;
             animation-delay: var(--delay);
         }
-
         .contact-bg-diamond {
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         }
-
         /* Animations */
         @keyframes float {
-
             0%,
             100% {
                 transform: translateY(0) rotate(0deg);
             }
-
             50% {
                 transform: translateY(-20px) rotate(5deg);
             }
         }
-
         .animate-pop-in {
             animation: popIn 0.8s cubic-bezier(0.26, 0.54, 0.32, 1) forwards;
             opacity: 0;
         }
-
         @keyframes popIn {
             0% {
                 opacity: 0;
                 transform: scale(0.8);
             }
-
             100% {
                 opacity: 1;
                 transform: scale(1);
             }
         }
-
         .animate-slide-up {
             animation: slideUp 0.8s ease forwards;
             opacity: 0;
             transform: translateY(30px);
         }
-
         @keyframes slideUp {
             100% {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
         .animate-fade-in {
             animation: fadeIn 1s ease forwards;
             opacity: 0;
         }
-
         @keyframes fadeIn {
             100% {
                 opacity: 1;
             }
         }
     </style>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Add ripple effect to WhatsApp button
@@ -2194,20 +1943,16 @@
                 whatsappBtn.addEventListener('click', function (e) {
                     let x = e.clientX - e.target.getBoundingClientRect().left;
                     let y = e.clientY - e.target.getBoundingClientRect().top;
-
                     let ripple = document.createElement('span');
                     ripple.style.left = x + 'px';
                     ripple.style.top = y + 'px';
                     ripple.classList.add('ripple-effect');
-
                     this.appendChild(ripple);
-
                     setTimeout(() => {
                         ripple.remove();
                     }, 1000);
                 });
             }
-
             // Animate elements when they come into view
             const contactObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -2220,12 +1965,10 @@
                     }
                 });
             }, { threshold: 0.1 });
-
             const contactSection = document.getElementById('contact');
             contactObserver.observe(contactSection);
         });
     </script>
-
     <!-- Footer Modernizado -->
     <footer class="footer-ctu">
         <!-- Ondas decorativas -->
@@ -2236,7 +1979,6 @@
                 </path>
             </svg>
         </div>
-
         <div class="container">
             <div class="footer-content">
                 <!-- Coluna 1: Logo e Sobre -->
@@ -2247,7 +1989,6 @@
                     </div>
                     <p class="footer-about-text">Serviços funerários com excelência, respeito e dignidade desde 1990.
                     </p>
-
                     <!-- Newsletter -->
                     <div class="footer-newsletter">
                         <h5>Receba nossas atualizações</h5>
@@ -2259,7 +2000,6 @@
                         </form>
                     </div>
                 </div>
-
                 <!-- Coluna 2: Links Rápidos -->
                 <div class="footer-col footer-links">
                     <h5 class="footer-title">Links Rápidos</h5>
@@ -2272,7 +2012,6 @@
                                     class="fas fa-chevron-right"></i> Política de Privacidade</a></li>
                     </ul>
                 </div>
-
                 <!-- Coluna 3: Contatos -->
                 <div class="footer-col footer-contact">
                     <h5 class="footer-title">Contatos</h5>
@@ -2298,7 +2037,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Coluna 4: Redes Sociais -->
                 <div class="footer-col footer-social">
                     <h5 class="footer-title">Redes Sociais</h5>
@@ -2320,14 +2058,12 @@
                             <span>WhatsApp</span>
                         </a>
                     </div>
-
                     <div class="footer-hours">
                         <h5><i class="far fa-clock"></i> Horário de Funcionamento</h5>
                         <p>Atendimento 24 horas<br>7 dias por semana</p>
                     </div>
                 </div>
             </div>
-
             <!-- Rodapé inferior -->
             <div class="footer-bottom">
                 <div class="footer-copyright">
@@ -2342,13 +2078,11 @@
                 </div>
             </div>
         </div>
-
         <!-- Botão de voltar ao topo -->
         <div class="back-to-top">
             <i class="fas fa-arrow-up"></i>
         </div>
     </footer>
-
     <!-- Modal de Política de Privacidade -->
     <div class="modal fade" id="privacyModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -2368,7 +2102,6 @@
             </div>
         </div>
     </div>
-
     <!-- CSS Personalizado para o Footer -->
     <style>
         :root {
@@ -2377,14 +2110,12 @@
             --white: #ffffff;
             --gray-light: #f5f5f5;
         }
-
         .footer-ctu {
             background-color: var(--deep-blue);
             color: var(--white);
             position: relative;
             padding-top: 80px;
         }
-
         .footer-waves {
             position: absolute;
             top: -1px;
@@ -2394,53 +2125,44 @@
             line-height: 0;
             transform: rotate(180deg);
         }
-
         .footer-waves svg {
             position: relative;
             display: block;
             width: calc(100% + 1.3px);
             height: 80px;
         }
-
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
             margin-bottom: 40px;
         }
-
         .footer-col {
             margin-bottom: 30px;
         }
-
         .footer-logo-container {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
         }
-
         .footer-logo {
             height: 50px;
             margin-right: 15px;
         }
-
         .footer-logo-text {
             font-weight: 700;
             font-size: 1.3rem;
         }
-
         .footer-about-text {
             margin-bottom: 25px;
             line-height: 1.7;
         }
-
         .footer-title {
             font-size: 1.2rem;
             margin-bottom: 25px;
             position: relative;
             padding-bottom: 10px;
         }
-
         .footer-title:after {
             content: '';
             position: absolute;
@@ -2450,16 +2172,13 @@
             height: 2px;
             background: var(--light-blue);
         }
-
         .footer-links ul {
             list-style: none;
             padding: 0;
         }
-
         .footer-links li {
             margin-bottom: 12px;
         }
-
         .footer-links a {
             color: var(--white);
             text-decoration: none;
@@ -2467,51 +2186,42 @@
             display: flex;
             align-items: center;
         }
-
         .footer-links a i {
             margin-right: 8px;
             font-size: 0.7rem;
             transition: all 0.3s ease;
         }
-
         .footer-links a:hover {
             color: var(--light-blue);
             transform: translateX(5px);
         }
-
         .footer-links a:hover i {
             color: var(--light-blue);
         }
-
         .contact-item {
             display: flex;
             margin-bottom: 20px;
         }
-
         .contact-item i {
             font-size: 1.2rem;
             margin-right: 15px;
             margin-top: 3px;
             color: var(--light-blue);
         }
-
         .contact-item strong {
             display: block;
             margin-bottom: 5px;
         }
-
         .contact-item p {
             margin: 0;
             opacity: 0.9;
         }
-
         .social-icons {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;
             margin-bottom: 30px;
         }
-
         .social-icon {
             display: flex;
             align-items: center;
@@ -2521,68 +2231,54 @@
             border-radius: 5px;
             transition: all 0.3s ease;
         }
-
         .social-icon i {
             margin-right: 10px;
             font-size: 1.1rem;
         }
-
         .social-icon span {
             font-size: 0.9rem;
         }
-
         .social-icon.facebook {
             background: #3b5998;
         }
-
         .social-icon.instagram {
             background: #e1306c;
         }
-
         .social-icon.youtube {
             background: #ff0000;
         }
-
         .social-icon.whatsapp {
             background: #25d366;
         }
-
         .social-icon:hover {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
-
         .footer-hours {
             background: rgba(255, 255, 255, 0.05);
             padding: 15px;
             border-radius: 8px;
         }
-
         .footer-hours h5 {
             font-size: 1rem;
             margin-bottom: 10px;
             display: flex;
             align-items: center;
         }
-
         .footer-hours h5 i {
             margin-right: 10px;
             color: var(--light-blue);
         }
-
         .footer-hours p {
             margin: 0;
         }
-
         .footer-newsletter h5 {
             font-size: 1rem;
             margin-bottom: 15px;
         }
-
         .newsletter-form {
             display: flex;
         }
-
         .newsletter-form input {
             flex: 1;
             padding: 10px 15px;
@@ -2590,7 +2286,6 @@
             border-radius: 5px 0 0 5px;
             outline: none;
         }
-
         .newsletter-form button {
             background: var(--light-blue);
             color: white;
@@ -2600,11 +2295,9 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-
         .newsletter-form button:hover {
             background: #004080;
         }
-
         .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding-top: 20px;
@@ -2613,23 +2306,19 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .footer-copyright {
             margin-bottom: 15px;
         }
-
         .footer-payments i {
             font-size: 1.5rem;
             margin-left: 15px;
             opacity: 0.7;
             transition: all 0.3s ease;
         }
-
         .footer-payments i:hover {
             opacity: 1;
             transform: translateY(-3px);
         }
-
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -2648,46 +2337,37 @@
             transition: all 0.3s ease;
             z-index: 999;
         }
-
         .back-to-top.active {
             opacity: 1;
             visibility: visible;
         }
-
         .back-to-top:hover {
             background: #004080;
             transform: translateY(-5px);
         }
-
         /* Responsivo */
         @media (max-width: 992px) {
             .footer-content {
                 grid-template-columns: repeat(2, 1fr);
             }
-
             .footer-bottom {
                 flex-direction: column;
                 text-align: center;
             }
-
             .footer-payments {
                 margin-top: 15px;
             }
-
             .footer-payments i {
                 margin: 0 7px;
             }
         }
-
         @media (max-width: 576px) {
             .footer-content {
                 grid-template-columns: 1fr;
             }
-
             .social-icons {
                 grid-template-columns: 1fr;
             }
-
             .back-to-top {
                 width: 40px;
                 height: 40px;
@@ -2696,16 +2376,13 @@
             }
         }
     </style>
-
     <!-- Scripts para funcionalidades -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Atualizar ano do copyright
             document.getElementById('current-year').textContent = new Date().getFullYear();
-
             // Botão voltar ao topo
             const backToTop = document.querySelector('.back-to-top');
-
             window.addEventListener('scroll', function () {
                 if (window.pageYOffset > 300) {
                     backToTop.classList.add('active');
@@ -2713,14 +2390,12 @@
                     backToTop.classList.remove('active');
                 }
             });
-
             backToTop.addEventListener('click', function () {
                 window.scrollTo({
                     top: 0,
                     behavior: 'smooth'
                 });
             });
-
             // Animação ao rolar para o footer
             const footer = document.querySelector('.footer-ctu');
             const observer = new IntersectionObserver((entries) => {
@@ -2730,11 +2405,9 @@
                     }
                 });
             }, { threshold: 0.1 });
-
             observer.observe(footer);
         });
     </script>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -2742,7 +2415,6 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
                     window.scrollTo({
@@ -2752,7 +2424,6 @@
                 }
             });
         });
-
         // Navbar background change on scroll
         window.addEventListener('scroll', function () {
             const navbar = document.querySelector('.navbar');
@@ -2762,7 +2433,6 @@
                 navbar.classList.remove('navbar-scrolled');
             }
         });
-
         // WhatsApp button click tracking
         document.querySelector('.whatsapp-btn').addEventListener('click', function () {
             // Aqui você pode adicionar tracking do Google Analytics ou outro
@@ -2770,5 +2440,4 @@
         });
     </script>
 </body>
-
 </html>
